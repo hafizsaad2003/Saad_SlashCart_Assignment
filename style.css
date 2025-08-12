@@ -865,7 +865,8 @@ body {
 
 /* --- Product Card --- */
 .product-card {
-  background: rgb(212, 211, 211);
+  background: #D6DBDA;
+;
   border-radius: 10px;
   overflow: hidden;
   width: 300px; /* slightly bigger */
@@ -971,6 +972,7 @@ margin-left: 10px;
     justify-content: center;
     gap: 80px;
     padding: 0 60px;
+    background-color: #E0E1DA;
 }
 
 /* Left text area */
@@ -1614,7 +1616,7 @@ margin-left: 10px;
 .newsletter {
   text-align: center;
   padding: 50px 20px;
-  background-color: #ccc;
+  background-color: #E0E1DA;
 }
 
 .newsletter-box {
@@ -1737,68 +1739,12 @@ footer {
   cursor: pointer;
   margin-bottom: 100px;
 }
-
-/* Responsive */
+/* Responsive — same layout for all screen sizes */
 @media (max-width: 900px) {
-  .nav-left {
-    display: none;
-  }
-
-  .nav-right {
-    gap: 10px;
-  }
-
-  .mega-inner {
-    flex-direction: column;
-  }
-
-  .mega-left {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-    padding-bottom: 12px;
-  }
-
-  .mega-right {
-    display: block;
-  }
-
-  .products-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* Desktop ka same layout rakha hai — sirf images thodi chhoti */
   .side-image img {
     width: 90%;
   }
-}
 
-/* 
-.product-card {
-    position: relative;
-    width: 250px;
-    border-radius: 15px;
-    overflow: hidden;
+  /* Agar chaho to yahan sirf font-size ya spacing adjust kar sakte ho */
 }
-
-.product-card img {
-    width: 100%;
-    display: block;
-}
-
-.hover-card {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.hover-card button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-} */
