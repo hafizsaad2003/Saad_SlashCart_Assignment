@@ -880,7 +880,7 @@ margin-left: 10px;
 
 .product-card img {
   width: 100%;
-  height: 270px; /* increased height */
+  height: 220px; /* increased height */
   object-fit: cover;
 }
 
@@ -1057,7 +1057,7 @@ margin-left: 10px;
 .clifton-dots {
     position: absolute;
     top: 50%;
-    right: 15px; /* side me position */
+    right: 1px; /* side me position */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column; /* vertical alignment */
