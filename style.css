@@ -1740,11 +1740,22 @@ footer {
   margin-bottom: 100px;
 }
 /* Responsive — same layout for all screen sizes */
-@media (max-width: 900px) {
-  /* Desktop ka same layout rakha hai — sirf images thodi chhoti */
-  .side-image img {
-    width: 90%;
-  }
-
-  /* Agar chaho to yahan sirf font-size ya spacing adjust kar sakte ho */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+.main-wrapper {
+  width: 1440px; /* Desktop ka base width */
+  margin: 0 auto;
+  transform-origin: top left;
+}
+
+@media (max-width: 1440px) {
+  .main-wrapper {
+    transform: scale(calc(100vw / 1440));
+  }
+}
+
+
