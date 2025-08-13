@@ -13,10 +13,10 @@ html, body {
 
 body {
   background: #0f0c29;
-  background-image: linear-gradient(to right top, #0f0c29, #302b63, #24243e);
+  color:#111; 
+  background:#fff; 
   background-size: cover;
   background-attachment: fixed;
-  color: #e1f5f9;
   line-height: 1.6;
 }
 
