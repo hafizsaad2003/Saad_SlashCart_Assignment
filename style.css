@@ -5,10 +5,40 @@
   box-sizing:border-box; 
 }
 
-body { 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  color:#111; background:#fff; 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+body {
+  background: #0f0c29;
+  background-image: linear-gradient(to right top, #0f0c29, #302b63, #24243e);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #e1f5f9;
+  line-height: 1.6;
+}
+
+/* Wrap everything in a main container */
+.main-wrapper {
+  width: 1440px; /* Desktop design ka base width */
+  margin: 0 auto;
+  transform-origin: top left;
+}
+
+@media (max-width: 1440px) {
+  .main-wrapper {
+    transform: scale(calc(100vw / 1440));
+  }
+}
+
+/* Make sure images scale properly */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 /* Top bar */
@@ -1738,23 +1768,6 @@ footer {
   width: 40px;
   cursor: pointer;
   margin-bottom: 100px;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-.main-wrapper {
-  width: 1440px; /* Desktop ka base width */
-  margin: 0 auto;
-  transform-origin: top left;
-}
-
-@media (max-width: 1440px) {
-  .main-wrapper {
-    transform: scale(calc(100vw / 1440));
-  }
 }
 
 
