@@ -8,7 +8,7 @@
 html, body {
   margin: 0;
   padding: 0;
-   width: 100% !important;
+  width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
@@ -34,11 +34,22 @@ body {
   width: 100% !important;
   max-width: 100% !important;
 }
-@media (max-width: 1440px) {
-  .main-wrapper {
-    transform: scale(calc(100vw / 1440));
-  }
+#root, .App, main, .container {
+  width: 100% !important;
+  max-width: 100% !important;
 }
+
+/* Force all sections to fit mobile */
+section, header, footer, div {
+  max-width: 100% !important;
+}
+
+/* Remove any unwanted fixed min-width on mobile */
+@media (max-width: 768px) {
+  body, html, #root, .App {
+    min-width: auto !important;
+  }
+
 
 /* Make sure images scale properly */
 img, video {
@@ -1776,6 +1787,7 @@ footer {
   cursor: pointer;
   margin-bottom: 100px;
 }
+
 
 
 
